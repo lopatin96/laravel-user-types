@@ -1,6 +1,6 @@
 <?php
 
-namespace Atin\LaravelLangSwitcher;
+namespace Atin\LaravelUserTypes;
 
 use Illuminate\Support\ServiceProvider;
 
