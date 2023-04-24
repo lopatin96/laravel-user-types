@@ -9,15 +9,15 @@ return new class extends Migration
 {
     public function up(): void
     {
-//        Schema::table('users', static function (Blueprint $table) {
-//            $table->string('type')->default(UserType::Client->value);
-//        });
+        Schema::table('users', static function (Blueprint $table) {
+            $table->string('type')->default(UserType::Client->value);
+        });
     }
 
     public function down(): void
     {
-//        Schema::table('users', static function (Blueprint $table) {
-//            $table->dropColumn(['type']);
-//        });
+        Schema::table('users', static function (Blueprint $table) {
+            $table->dropColumn(['type']);
+        });
     }
 };
