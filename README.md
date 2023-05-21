@@ -11,6 +11,11 @@ class User extends Authenticatable
     use HasUserType, …
 ```
 
+Run migrations:
+```php
+php artisan migrate
+```
+
 # Publishing
 ### Migrations
 ```php
