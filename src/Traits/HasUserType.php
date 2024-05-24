@@ -16,6 +16,11 @@ trait HasUserType
         return $this->type === UserType::Client;
     }
 
+    public function isBusiness(): bool
+    {
+        return $this->type === UserType::Business;
+    }
+
     public function isModerator(): bool
     {
         return $this->type === UserType::Moderator;
